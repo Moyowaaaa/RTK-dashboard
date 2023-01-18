@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face{
+    font-family: 'inter-bold';
+    src: url('../assets/fonts/Inter-Bold.otf') format('opentype');
+}
+@font-face{
+    font-family: 'inter-medium';
+    src: url('../assets/fonts/Inter-Medium.otf') format('opentype');
+}
+@font-face{
+    font-family: 'inter-regular';
+    src: url('../assets/fonts/Inter-Regular.otf') format('opentype');
+}
+
+@font-face{
+    font-family: 'inter-light';
+    src: url('../assets/fonts/Inter-Light.otf') format('opentype');
+}
+
+
+.main {
+    background-image:url('../assets/images/logo.svg');
+    background-repeat:no-repeat
+}
+.login-page{
+    background-image:url('../assets/images/loginBackground.svg');
+    background-size:cover;
+    background-repeat:no-repeat
+}
+.signup-page{
+    background-image:url('../assets/images/signupBackground.svg');
+    background-size:cover;
+    background-repeat:no-repeat
+}
+
+#signup-page{
+    background-image:url('../assets/images/signupLogo.svg');
+    background-repeat:no-repeat;
+    background-position: right top;
+        background-repeat: no-repeat; 
+}
+
+.jumbotron {
+    height:10rem;
+    background-image:url('../assets/images/loginBackground.svg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-color:#3A57E8;
+ 
+}
+.announcement{
+    background: rgba(58, 87, 232, 0.35);
+}
+
+.hamburger path{
+    fill: none;
+    stroke: black;
+    stroke-linecap: round;
+}
+
+.mainChart{
+    background:url('../assets/images/MainChart.svg');
+    background-repeat:no-repeat;
+    background-size:cover
+}
+.debitCard{
+    background:url('../assets/images/debitCard.svg');
+    /* background-size:cover; */
+    background-repeat:no-repeat;
+    background-size:cover
+
+}
+
+
+.card-hero {
+    background-image:url('../assets/images/card.svg');
+    background-size:contain;
+    background-position:center;
+    background-repeat:no-repeat;
+
+}
+
+.sidebar {
+    background-image:url('../assets/images/sidebarBackground.svg');
+    background-position-x:left;
+    background-position-y:110vh;
+    background-repeat:no-repeat
+}
+
+.charts{
+    position:relative;
+    border:2px solid red;
+}
+
+.fashion, .accessories {
+    position:absolute
+}
+
+
+::-webkit-scrollbar {
+    margin-top:2%;
+  height: 1px;;
+  width: 5px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #3A57E8;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: white;
+  }
+
+
+
+@media screen and (max-width:485px) {
+    .jumbotron{
+        height:13rem
+    }
+    .main{
+        background:none
+    }
+    .card-hero {
+        background-image:url('../assets/images/card.svg');
+        background-size:cover;
+    }
+}
